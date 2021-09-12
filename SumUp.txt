@@ -1,0 +1,19 @@
+PRADZIA
+
+1. Instaliuojamas package.json
+2. Pasakau kad pas mane type bus module
+3. Pasakau kad pas mane start scriptas bus node ./src/run.js
+4. Sukuriamas folderis src ir jame failas run.js
+5. Patestuojam console.log("Hello")
+6. I terminala rasom npm start ir ispausdina hello
+7. Einam i npmjs.com kuriame yra beprotiskas kiekis biblioteku.
+8. Paieskoje ieskome web server. Ivedame express.
+
+KAIP NAUDOTIS EXPRESS SERVERIU
+1. package.json reikia pasakyti jog naudosimes express biblioteka
+2. Teriminale rasome npm instal express arba npm i express
+package.json atsirado dependences nauja savybe "express", tai reiskia kad projektas naudosis express  projektu ir tam tikra jo versija. Atsirado ir node_modules direktorija kurioje galima rasti express - js programa.
+3. http://expressjs.com/en/starter/hello-world.html aiskinames kaip importo pagalba pasijungti express serveri. Import naudojam nes type yra modules.
+Rasom import express from "express"; o likusia dali nusikopijuojam ir idedam, vedam npm start ir localhost:3000 pasitikrinam ar viskas veikia.
+Ps.Ctrl c sustabdo node terminala
+Nustatomas statinis resursas(nuroda)
