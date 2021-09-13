@@ -42,6 +42,7 @@ app.get('/zmones', (req, res) => {
     html += "<html>\r\n";
     html += "<body>\r\n";
     html += "<h1>Žmonių sąrašas</h1>\r\n";
+    html += `<a href = "/naujas">Naujas</a>\r\n`;
     html += "<ul>\r\n";
     for (const zmogus of zmones) {
         html +=

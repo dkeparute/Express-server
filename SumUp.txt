@@ -17,3 +17,7 @@ package.json atsirado dependences nauja savybe "express", tai reiskia kad projek
 Rasom import express from "express"; o likusia dali nusikopijuojam ir idedam, vedam npm start ir localhost:3000 pasitikrinam ar viskas veikia.
 Ps.Ctrl c sustabdo node terminala
 Nustatomas statinis resursas(nuroda)
+
+
+ZMONIU SARASO IVEDIMAS IR ISTRYNIMAS I SERVERIU
+
