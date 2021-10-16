@@ -27,24 +27,29 @@ const zmones = [
 
 const app = express();
 
-// TIKRINADAMAS SITA TAISYKLE JEIGU JI ATITINKA REIKALAVIMA ZEMIAU NEBETIKRINA , KITU ATVEJU -TIKRINA ZEMIAU ESANCIAS TAISYKLES
+// TIKRINADAMAS SITA TAISYKLE JEIGU JI ATITINKA REIKALAVIMA ZEMIAU NEBETIKRINA KITU TAISYKLIU , KITU ATVEJU -TIKRINA ZEMIAU ESANCIAS TAISYKLES
+// web - direktorija is kur imsime, index: "index.html - options
 app.use(express.static(web, {
     index: "index.html"
-    // GALIMA NURODYTI IR DAUGIAU REIKALAVIMU  INDEX, JEIGU PVZ, NETYCIA VIENO IS FAILU IESKOMU NEBUTU, TAIM REIKTU RASYTI index: ["index.html", "failas.html"]
+    // GALIMA NURODYTI IR DAUGIAU REIKALAVIMU  INDEX, JEIGU PVZ, NETYCIA VIENO IS FAILU IESKOMU NEBUTU, TAM REIKTU RASYTI index: ["index.html", "failas.html"]
 }));
+
 // MIDLE WAR SUKURIMAS
 app.use(express.urlencoded({
     extended: true,
 }));
 // extended reiskias jog moka naudotis nauja sintakse, viska padaro stringu
+
 // CIA YRA ENT POINTAI: jeigu pasakei / atspausdins hello world
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
+
 // CIA YRA ENT POINTAI: jeigu pasakei /index.html / atspausdins Labas pasauli
 app.get('/index.html', (req, res) => {
     res.send("<html><body>Labas pasauli!</body></html>");
 });
+
 // SUKURIAMAS ENT POINTAS I ZMONIU SARA
 app.get('/zmones', (req, res) => {
     let html = "";
@@ -166,6 +171,7 @@ app.get("/zmogusDelete", (req, res) => {
     // res.send("nieko mes neistrynem");
     res.redirect("/zmones");
 });
+// KVIESDAMAS METODA LISTEN , JAU KITA KVIECIANT PORTA ISMES KLAIDA IR NUTRAUKS SERVERIO VEIKLA
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
 });
