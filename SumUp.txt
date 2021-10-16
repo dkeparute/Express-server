@@ -31,6 +31,6 @@ Rasom import express from "express"; o likusia dali nusikopijuojam ir idedam, ve
 Ps.Ctrl c sustabdo node terminala
 --------------------------------------------------------------------------------------
 
-ZMONIU SARASO IVEDIMAS IR ISTRYNIMAS I SERVERIU
+ZMONIU SARASO IVEDIMAS IR ISTRYNIMAS IS SERVERIU
 
 IVEDAMAS NAUJAS ZMOGUS I SARASA
