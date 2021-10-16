@@ -24,10 +24,6 @@ app.get('/', function (req, res) {
 });
  
 app.listen(port, () => {
-    if(err) {
-        console.log('Failed to start server);
-        return;
-    }
     console.log(`Example at http://localhost:${port}`);
 }
 
